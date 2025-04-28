@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo22"
+        android:label="SYTRACK"
+        android:roundIcon="@drawable/clipart1534898"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AttendanceSystem"
+        tools:targetApi="31">
+        <activity
+            android:name=".studentTimeTable"
+            android:exported="false" />
+        <activity
+            android:name=".TimetableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LowTotalAttendanceActivity50"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceFilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LowTotalAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LowAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Repository.LowAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubjectReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DefaulterListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".subject5_list"
+            android:exported="false" />
+        <activity
+            android:name=".subject4_list"
+            android:exported="false" />
+        <activity
+            android:name=".subject3_list"
+            android:exported="false" />
+        <activity
+            android:name=".subject2_list"
+            android:exported="false" />
+        <activity
+            android:name=".subject1_list"
+            android:exported="false" />
+        <activity
+            android:name=".subject1"
+            android:exported="false" />
+        <activity
+            android:name=".location_target"
+            android:exported="false"
+            android:label="@string/title_activity_location_target"
+            android:theme="@style/Theme.AttendanceSystem" />
+        <activity
+            android:name=".target_location"
+            android:exported="false"
+            android:label="@string/title_activity_target_location"
+            android:theme="@style/Theme.AttendanceSystem" />
+        <activity
+            android:name=".activityNotification"
+            android:exported="false" />
+        <activity
+            android:name=".notifcation"
+            android:exported="false" />
+        <activity
+            android:name=".activites.notification"
+            android:exported="false" />
+        <activity
+            android:name=".FetchingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentList"
+            android:exported="false" />
+        <activity
+            android:name=".informationprofile"
+            android:exported="false" />
+        <activity
+            android:name=".myprofile"
+            android:exported="false"
+            android:label="@string/title_activity_myprofile"
+            android:theme="@style/Theme.AttendanceSystem" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            tools:replace="android:screenOrientation" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".scanQr"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateQr"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

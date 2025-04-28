@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Present Month Defaulters"/>
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a number"
+        android:inputType="number" />
+
+    <!-- Button to Submit -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allUsersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnNotifyDefaulters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notify Defaulters"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/somaiya_color"
+        android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/btnExportPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export Defaulters to PDF"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
